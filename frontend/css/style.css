@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+.alert-warning {
+  color: red;
+  font-size: 25px;
+}
+
+body {
+  background: #eae8e2;
+}
+
+.logo {
+  height: 100px;
+  background: #243e39;
+}
+
+.logo img {
+  height: 80px;
+  margin: 10px 0;
+}
+
+.userBtns {
+  /*text-align: right;*/
+  float: right;
+  margin: 2% 1%;
+  color: #243e39;
+}
+
+.footer {
+  background: #243e39;
+  text-align: center;
+  color: #b99b80;
+}
+
+.footer img {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.pages {
+  background: #757575;
+  text-align: center;
+}
+
+.link {
+  padding: 11px 0;
+  font-size: 20px;
+}
+
+.link a {
+  color: #243e39;
+}
+
+.link p {
+  margin: 0;
+}
+
+.row1 {
+  background: url(../images/coffee.jpg);
+  background-size: cover;
+  background-position: 80% 75%;
+  min-height: 450px;
+  padding: 100px 30px 0 50px;
+}
+
+.row2 {
+  background: #eae8e2;
+}
+
+.row2 h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.row3 {
+  background: url(../images/coffee-bags.jpg);
+  background-size: cover;
+  background-position: top;
+  color: #eae8e2;
+  min-height: 450px;
+  padding: 70px 30px 0 50px;
+}
+
+.row4 {
+  min-height: 450px;
+  background: #eae8e2;
+}
+
+.text4 {
+  padding: 100px 30px 50px 70px;
+}
+
+img.image2 {
+  width: 300px;
+  margin: 131px auto 20px;
+  margin-left: 50px;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+  border: 8px solid white;
+}
+
+.row5 {
+  background: url(../images/cup-steam.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 450px;
+  color: #eae8e2;
+  padding: 70px 30px 0 50px;
+}
+
+.row6 {
+  text-align: center;
+  min-height: 300px;
+  padding: 100px;
+  background: #eae8e2;
+}
+
+.started {
+  background-color: #243e39;
+  color: #eae8e2;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.story {
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.loginbox {
+  border: solid 3px #243e39;
+  background: #fff;
+  margin: 5% 35%;
+  width: 30%;
+  padding: 2% 3%;
+  box-shadow: 0 0 10px #999;
+}
+
+.loginbox h2 {
+  text-align: center;
+}
+
+.loginbox hr {
+  border: solid 1px #243e39;
+}
+
+.deliverybox {
+  border: solid 3px #243e39;
+  background: #fff;
+  margin: 5% 30%;
+  width: 40%;
+  padding: 2% 3%;
+  box-shadow: 0 0 10px #999;
+}
+
+.deliverybox h2 {
+  text-align: center;
+}
+
+.deliverybox hr {
+  border: solid 1px #243e39;
+}
+
+.submitBtn {
+  text-align: center;
+  padding: 3%;
+}
+
+.individual {
+  border: solid 3px #243e39;
+  background: #fff;
+  margin: 3% 1.5%;
+  width: 30%;
+  padding: 2% 3%;
+  box-shadow: 0 0 10px #999;
+  text-align: center;
+}
+
+.individual img {
+  width: 90%;
+}
+
+.individual table {
+  margin: auto;
+  padding: 4% 1%;
+}
+
+.leftOption  {
+  text-align: right;
+  padding: 5px 15px;
+}
+
+.rightOption  {
+  text-align: left;
+  padding: 5px 15px;
+}
+
+.optionsBox {
+  display: flex;
+  margin-left: 40%;
+}
+.optionsBtn {
+  text-align: center;
+  background-color: #243e39;
+  color: #eae8e2;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.optionsHeader {
+  text-align: center;
+  margin-top: 3%;
+}
+.submitOrderBtn {
+  color: #243e39;
+}
+.paymentPage {
+  width: 40%;
+  margin: 5% auto;
+  padding: 2% 0 2% 6%;
+  border: solid 3px #243e39;
+  box-shadow: 0 0 10px #999;
+  background: #fff;
+}
+
+.thankyou {
+  border: solid 3px #243e39;
+  background: #fff;
+  margin: 5% 30%;
+  width: 40%;
+  padding: 2% 3%;
+  box-shadow: 0 0 10px #999;
+}
+
+.thankyou h2 {
+  text-align: center;
+}
+
+.thankyou hr {
+  border: solid 1px #243e39;
+}
+
+.thankyouBtn {
+  text-align: center;
+  margin: auto;
+}
+
+@media(max-width:990px) {
+  .text4 {
+    padding: 0 30px 50px 30px;
+  }
+  .deliverybox {
+    margin: 5% auto;
+    width: 80%
+  }
+  .individual {
+    width: 50%;
+    margin: 5% auto;
+  }
+}
+
+@media(max-width:768px) {
+  .loginbox {
+    margin: 5% auto;
+    width: 80%
+  }
+  .thankyou {
+    margin: 5% auto;
+    width: 80%
+  }
+  .individual {
+    width: 80%;
+    margin: 5% auto;
+  }
+}

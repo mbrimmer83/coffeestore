@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="paymentPage">
+    <div class="row">
+      <h2>Payment</h2>
+      <br>
+      <h4>Choices (Edit)</h4>
+      <div class="col col-md-6">
+        <p>Grind</p>
+        <p>Frequency of delivery</p>
+        <p>Coffee in pounds</p>
+      </div>
+      <div class="col col-md-6">
+        <p>{{grind}}</p>
+        <p>Weekly</p>
+        <p>{{quantity}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Delivery Information (Edit)</h4>
+      <div class="col col-md-6">
+        <p>Full Name</p>
+        <p>Address Line 1</p>
+        <p ng-show="data.address2">Address Line 2</p>
+        <p>City</p>
+        <p>State</p>
+        <p>Zip Code</p>
+        <p>Delivery Date</p>
+      </div>
+      <div class="col col-md-6">
+        <p>{{data.name}}</p>
+        <p>{{data.address1}}</p>
+        <p ng-show="data.address2"> {{data.address2}}</p>
+        <p>{{data.city}}</p>
+        <p>{{data.state}}</p>
+        <p>{{data.zipcode}}</p>
+        <p>{{data.date | date: "MM-dd-yyyy"}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Current Charge</h4>
+      <div class="col col-md-6">
+        <p>Quantity</p>
+        <p>Shipping</p>
+        <p>Total</p>
+      </div>
+      <div class="col col-md-6">
+        <p>{{quantity}} x $20.00/lb = ${{quantity * 20}}</p>
+        <p>FREE!</p>
+        <p>${{quantity * 20}}</p>
+      </div>
+      <div class="row">
+        <br>
+        <a ng-click="pay()"><button type="submit" class="btn submitOrderBtn">Pay with Card</button></a>
+      </div>
+    </div>
+  </div>
+</div>

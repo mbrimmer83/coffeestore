@@ -55,7 +55,8 @@ app.post("/signup", function(request, response){
 app.post('/login', function(request, response){
   var userInfo = request.body;
   User.findById(userInfo.username, function(err, user){
-    if(err){
+    console.log(user);
+    if(err || !user){
       response.status(401).json({
         status: "fail",
         message: "Invalid username or password"
